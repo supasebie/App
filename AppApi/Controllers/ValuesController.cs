@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AppApi.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace AppApi.Controllers
 {
+  [Authorize]
   [ApiController]
   [Route("api/[controller]")]
   public class ValuesController : ControllerBase
@@ -24,6 +26,7 @@ namespace AppApi.Controllers
 
         return Ok(values);
     }
+    [AllowAnonymous]
     [HttpGet("{id}")]
     public IActionResult GetValue(int id)
     {

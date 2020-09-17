@@ -86,3 +86,11 @@
 /Users/sebie/WebDev/App/AppApi/obj/Debug/netcoreapp3.1/AppApi.dll
 /Users/sebie/WebDev/App/AppApi/obj/Debug/netcoreapp3.1/AppApi.pdb
 /Users/sebie/WebDev/App/AppApi/obj/Debug/netcoreapp3.1/AppApi.genruntimeconfig.cache
+/Users/sebie/WebDev/App/AppApi/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/Users/sebie/WebDev/App/AppApi/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/Users/sebie/WebDev/App/AppApi/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/sebie/WebDev/App/AppApi/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/sebie/WebDev/App/AppApi/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/Users/sebie/WebDev/App/AppApi/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/sebie/WebDev/App/AppApi/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/Users/sebie/WebDev/App/AppApi/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
