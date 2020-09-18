@@ -19,6 +19,7 @@ namespace AppApi.Controllers
     {
       _context = context;
     }
+    [AllowAnonymous]
     [HttpGet]
     public IActionResult GetValues()
     {
