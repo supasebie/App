@@ -76,6 +76,5 @@ namespace AppApi.Controllers
         token = tokenHandler.WriteToken(token)
       });
     }
-
   }
 }

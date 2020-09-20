@@ -1,3 +1,5 @@
+import { ActivatedRoute } from '@angular/router';
+import { User } from '../../_models/user';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./member-list.component.css']
 })
 export class MemberListComponent implements OnInit {
+  users: User[];
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.data.subscribe(data => {
+      this.users = data['users'];
+    });
   }
-
 }
