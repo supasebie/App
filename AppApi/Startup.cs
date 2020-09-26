@@ -34,6 +34,7 @@ namespace AppApi
         opt.SerializerSettings.ReferenceLoopHandling =
         Newtonsoft.Json.ReferenceLoopHandling.Ignore;
       });
+      services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
       services.AddCors();
       services.AddAutoMapper(typeof(FriendsRepository).Assembly);
       services.AddScoped<IFriendsRepository, FriendsRepository>();

@@ -18,17 +18,18 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 // Compontents
-import { AppComponent } from './app.component';
-import { MessagesComponent } from './messages/messages.component';
-import { ListsComponent } from './lists/lists.component';
 import { AuthService } from './_services/auth.service';
-import { NavComponent } from './nav/nav.component';
-import { RegisterComponent } from './register/register.component';
+import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { NavComponent } from './nav/nav.component';
+import { ListsComponent } from './lists/lists.component';
+import { MessagesComponent } from './messages/messages.component';
+import { RegisterComponent } from './register/register.component';
 import { MemberListComponent } from './members//member-list/member-list.component';
 import { MemberCardComponent } from './members/member-card/member-card.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 import { MemberEditComponent } from './members/member-edit/member-edit.component';
+import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 
 // Node_Modules
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
@@ -38,6 +39,8 @@ import { NgxGalleryModule } from 'ngx-gallery-9';
 
 // Providers
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
+import { FileUploadModule } from 'ng2-file-upload';
+
 
 @NgModule({
   declarations: [
@@ -51,6 +54,7 @@ import { ErrorInterceptorProvider } from './_services/error.interceptor';
     MemberCardComponent,
     MemberDetailComponent,
     MemberEditComponent,
+    PhotoEditorComponent,
    ],
   imports: [
     BrowserModule,
@@ -70,6 +74,7 @@ import { ErrorInterceptorProvider } from './_services/error.interceptor';
       }
     }),
     NgxGalleryModule,
+    FileUploadModule,
   ],
   providers: [
     AuthService,

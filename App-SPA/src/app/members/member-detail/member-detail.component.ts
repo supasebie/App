@@ -43,7 +43,6 @@ export class MemberDetailComponent implements OnInit {
         description: photo.description
       });
     }
-    console.log(imageUrls);
     return imageUrls;
   }
 }

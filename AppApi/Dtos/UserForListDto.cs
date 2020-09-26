@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using AppApi.Models;
-
 namespace AppApi.Dtos
 {
   public class UserForListDto
