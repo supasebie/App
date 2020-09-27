@@ -1,3 +1,4 @@
+import { ReactiveFormsModule } from '@angular/forms';
 // Guardds
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 
@@ -40,6 +41,7 @@ import { NgxGalleryModule } from 'ngx-gallery-9';
 // Providers
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { FileUploadModule } from 'ng2-file-upload';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 
 @NgModule({
@@ -60,7 +62,9 @@ import { FileUploadModule } from 'ng2-file-upload';
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
+    BsDatepickerModule.forRoot(),
     TabsModule.forRoot(),
     BsDropdownModule.forRoot(),
     RouterModule.forRoot(appRoutes),
