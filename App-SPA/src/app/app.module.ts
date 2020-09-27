@@ -42,6 +42,7 @@ import { NgxGalleryModule } from 'ngx-gallery-9';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { FileUploadModule } from 'ng2-file-upload';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { TimeagoModule } from 'ngx-timeago';
 
 
 @NgModule({
@@ -64,6 +65,7 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    TimeagoModule.forRoot(),
     BsDatepickerModule.forRoot(),
     TabsModule.forRoot(),
     BsDropdownModule.forRoot(),

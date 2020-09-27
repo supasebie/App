@@ -4,12 +4,14 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using AppApi.Data;
 using AppApi.Dtos;
+using AppApi.Helpers;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppApi.Controllers
 {
+  [ServiceFilter(typeof(LogUserActivity))]
   [Authorize]
   [ApiController]
   [Route("api/[controller]")]
