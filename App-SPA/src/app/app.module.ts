@@ -34,6 +34,8 @@ import { PhotoEditorComponent } from './members/photo-editor/photo-editor.compon
 
 // Node_Modules
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { JwtModule } from '@auth0/angular-jwt';
 import { NgxGalleryModule } from 'ngx-gallery-9';
@@ -65,6 +67,7 @@ import { TimeagoModule } from 'ngx-timeago';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    ButtonsModule.forRoot(),
     TimeagoModule.forRoot(),
     BsDatepickerModule.forRoot(),
     TabsModule.forRoot(),
@@ -79,6 +82,7 @@ import { TimeagoModule } from 'ngx-timeago';
         disallowedRoutes: ['localhost:5000/api/auth']
       }
     }),
+    PaginationModule.forRoot(),
     NgxGalleryModule,
     FileUploadModule,
   ],

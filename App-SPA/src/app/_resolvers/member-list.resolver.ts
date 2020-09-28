@@ -8,11 +8,13 @@ import { Resolve, Router } from '@angular/router';
 
 @Injectable()
 export class MemberListResolver implements Resolve<User[]> {
+  pagenumber = 1;
+  pageSize = 5;
 
   constructor(private userService: UserService, private router: Router, private alertify: AlertifyService) { }
 
   resolve(): Observable<User[]> {
-    return this.userService.getUsers().pipe(
+    return this.userService.getUsers(this.pagenumber, this.pageSize).pipe(
       catchError(error => {
         this.alertify.error('Problem retreving users');
         this.router.navigate(['/home']);
