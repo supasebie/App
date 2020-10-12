@@ -6,6 +6,7 @@ import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { MemberListResolver } from './_resolvers/member-list.resolver';
 import { MemberDetailResolver } from './_resolvers/member-detail.resolver';
+import { ListsResolver } from './_resolvers/lists.resolver';
 
 // Routes
 import { appRoutes } from './../routes';
@@ -33,6 +34,7 @@ import { MemberEditComponent } from './members/member-edit/member-edit.component
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 
 // Node_Modules
+import { StoreModule } from '@ngrx/store';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
@@ -83,8 +85,10 @@ import { TimeagoModule } from 'ngx-timeago';
       }
     }),
     PaginationModule.forRoot(),
+    StoreModule,
     NgxGalleryModule,
     FileUploadModule,
+    StoreModule.forRoot({}, {}),
   ],
   providers: [
     AuthService,
@@ -92,6 +96,7 @@ import { TimeagoModule } from 'ngx-timeago';
     MemberDetailResolver,
     MemberListResolver,
     MemberEditResolver,
+    ListsResolver,
     PreventUnsavedChanges,
   ],
   bootstrap: [AppComponent]
